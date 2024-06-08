@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Pretendard-Regular'; /* 사용할 폰트의 이름을 정의 */
+  src: url('./fonts/Pretendard-Regular.ttf'); /* 폰트 파일의 위치 */
+}
+
+.App {
+  font-family: 'Pretendard';
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(81, 144, 239);;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(81, 144, 239);;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.note {
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc; /* 얇은 회색 선 */
+}
+
+.note h2 {
+  margin: 0 0 5px;
+  color: rgb(81, 144, 239); /* 하늘색 글씨 */
+}
+
+.note p {
+  margin: 5px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(81, 144, 239);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: rgb(81, 144, 239);
+}
+
+.pagination button:hover {
+  background-color: rgb(81, 144, 239);
+}
+
+@media (max-width: 600px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .note {
+    font-size: 14px;
+  }
+}
